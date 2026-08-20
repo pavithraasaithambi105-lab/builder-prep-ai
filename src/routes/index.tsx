@@ -10,6 +10,8 @@ import {
   Visual,
 } from "@/components/blog/parts";
 import { ExportPdfButton } from "@/components/blog/ExportPdfButton";
+import heroImage from "@/assets/ai-interviewer-hero.png.asset.json";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
