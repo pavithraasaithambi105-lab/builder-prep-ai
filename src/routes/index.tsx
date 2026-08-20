@@ -9,6 +9,7 @@ import {
   SubHeading,
   Visual,
 } from "@/components/blog/parts";
+import { ExportPdfButton } from "@/components/blog/ExportPdfButton";
 
 export const Route = createFileRoute("/")({
   head: () => ({
