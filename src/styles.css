@@ -98,3 +98,64 @@
 @utility rule-top {
   border-top: 1px solid var(--color-border);
 }
+
+/* Print / PDF export styling */
+@media print {
+  @page {
+    size: A4;
+    margin: 16mm 14mm;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+  }
+
+  body {
+    font-size: 10.5pt;
+  }
+
+  header,
+  main {
+    border: 0 !important;
+    background: #fff !important;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  h1 {
+    font-size: 26pt !important;
+    line-height: 1.1 !important;
+  }
+
+  h2 {
+    font-size: 16pt !important;
+    break-after: avoid;
+  }
+
+  h3 {
+    font-size: 12.5pt !important;
+    break-after: avoid;
+  }
+
+  section,
+  figure,
+  blockquote,
+  li,
+  ol,
+  ul {
+    break-inside: avoid;
+  }
+
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+
+  [data-print-hide] {
+    display: none !important;
+  }
+}

@@ -9,6 +9,7 @@ import {
   SubHeading,
   Visual,
 } from "@/components/blog/parts";
+import { ExportPdfButton } from "@/components/blog/ExportPdfButton";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -82,12 +83,19 @@ function BlogPage() {
               ),
             )}
           </div>
+          <div className="mt-8 flex flex-wrap items-center gap-3" data-print-hide>
+            <ExportPdfButton />
+            <span className="text-sm text-muted-foreground">
+              Opens your print dialog — choose "Save as PDF" to share or present.
+            </span>
+          </div>
           <Visual
             label="SCREENSHOT: AI Interviewer interface (hero image)"
             caption="Visual 1 — the main interview screen candidates see."
           />
         </div>
       </header>
+
 
       <div className="mx-auto max-w-3xl px-5 pb-24">
         {/* TOC */}
