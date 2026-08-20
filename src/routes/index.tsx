@@ -10,7 +10,7 @@ import {
   Visual,
 } from "@/components/blog/parts";
 import { ExportPdfButton } from "@/components/blog/ExportPdfButton";
-import heroImage from "@/assets/ai-interviewer-hero.png.asset.json";
+import heroImage from "@/assets/ai-interviewer-hero.png";
 
 
 export const Route = createFileRoute("/")({
@@ -93,7 +93,7 @@ function BlogPage() {
           </div>
           <figure className="my-8 overflow-hidden rounded-lg border border-border bg-card shadow-soft">
             <img
-              src={heroImage.url}
+              src={heroImage}
               alt="AI Interviewer interface with an AI avatar and a candidate in a video interview"
               className="w-full"
               loading="lazy"
