@@ -89,10 +89,18 @@ function BlogPage() {
               Opens your print dialog — choose "Save as PDF" to share or present.
             </span>
           </div>
-          <Visual
-            label="SCREENSHOT: AI Interviewer interface (hero image)"
-            caption="Visual 1 — the main interview screen candidates see."
-          />
+          <figure className="my-8 overflow-hidden rounded-lg border border-border bg-card shadow-soft">
+            <img
+              src={heroImage.url}
+              alt="AI Interviewer interface with an AI avatar and a candidate in a video interview"
+              className="w-full"
+              loading="lazy"
+            />
+            <figcaption className="border-t border-border px-4 py-3 text-sm text-muted-foreground">
+              Visual 1 — the main interview screen candidates see.
+            </figcaption>
+          </figure>
+
         </div>
       </header>
 
