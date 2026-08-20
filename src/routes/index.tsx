@@ -771,14 +771,21 @@ function BlogPage() {
           <h2 className="text-2xl text-ink">Project Links</h2>
           <dl className="mt-4 space-y-3 font-mono text-sm">
             {[
-              ["GitHub", "[ADD GITHUB LINK]"],
-              ["Live Demo", "[ADD LIVE DEMO LINK]"],
-              ["Demo Video", "[ADD VIDEO LINK]"],
-              ["LinkedIn", "[ADD LINKEDIN LINK]"],
-            ].map(([label, placeholder]) => (
+              ["GitHub", "https://github.com/pavithraasaithambi105-lab"],
+              ["LinkedIn", "https://www.linkedin.com/in/pavithra-a-8b0509333/"],
+            ].map(([label, href]) => (
               <div key={label} className="flex flex-wrap gap-x-3">
                 <dt className="w-28 shrink-0 text-muted-foreground">{label}</dt>
-                <dd className="text-primary">{placeholder}</dd>
+                <dd className="min-w-0 break-all">
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-primary underline underline-offset-4"
+                  >
+                    {href}
+                  </a>
+                </dd>
               </div>
             ))}
           </dl>
